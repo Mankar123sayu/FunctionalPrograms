@@ -11,7 +11,7 @@ namespace SnakeAndLadder
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an option to execute \n 1. Flip Coin"); //\n 2.Power of 2 \n 3. Prime Factor \n 4.Exit");
+                Console.WriteLine("Choose an option to execute \n 1. Flip Coin \n 2.LeapYear"); //\n 3. Prime Factor \n 4.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -20,13 +20,13 @@ namespace SnakeAndLadder
                         int num = Convert.ToInt32(Console.ReadLine());
                         flip.Flip(num);
                         break;
-                    /*case 2: 
-                        PowerOfTwo power = new PowerOfTwo();
-                        Console.WriteLine("Enter the power: ");
-                        int num1 = Convert.ToByte(Console.ReadLine());
-                        power.Display(num1);
+                    case 2: 
+                        LeapYear find = new LeapYear();
+                        Console.WriteLine("Enter the year: ");
+                        int num1 = Convert.ToInt32(Console.ReadLine());
+                        find.Leap(num1);
                         break;
-                    case 3:
+                    /*case 3:
                         PrimeFactor prime = new PrimeFactor();
                         Console.WriteLine("Enter the number: ");
                         int num2 = Convert.ToInt32(Console.ReadLine());
