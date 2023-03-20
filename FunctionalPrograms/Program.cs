@@ -1,17 +1,18 @@
 ﻿using FunctionalPrograms;
 using System;
 
-namespace SnakeAndLadder
+namespace FunctionalPrograms
 {
     public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Functional Programs");
+            
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an option to execute \n 1. Flip Coin \n 2.LeapYear"); //\n 3. Prime Factor \n 4.Exit");
+                Console.WriteLine("Choose an option to execute \n 1. Flip Coin \n 2. LeapYear \n 3. PowerOf2 \n 4. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,6 +27,12 @@ namespace SnakeAndLadder
                         int num1 = Convert.ToInt32(Console.ReadLine());
                         find.Leap(num1);
                         break;
+                    case 3:
+                        PowerOf2 power = new PowerOf2();
+                        Console.WriteLine("Enter the degree of power: ");
+                        int num2 = Convert.ToInt32(Console.ReadLine());
+                        power.Display(num2);
+                        break;
                     /*case 3:
                         PrimeFactor prime = new PrimeFactor();
                         Console.WriteLine("Enter the number: ");
@@ -36,7 +43,7 @@ namespace SnakeAndLadder
                         flag = false;
                         break;
                 }
-            }
+            }      
         }
     }
 }
