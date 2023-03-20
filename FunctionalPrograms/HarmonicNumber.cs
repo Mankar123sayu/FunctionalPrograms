@@ -10,13 +10,13 @@ namespace FunctionalPrograms
     {
         int i;
         int n;
-        double s = 0.0;
+        //double s = 0.0;
         public void Harmonic(int n)
         {   
             for (int i = 1; i <=n; i++) 
             {
                 Console.Write("1/{0} + " ,i);
-                s+= 1/(float)i;              
+                //s+= 1/(float)i;              
             }
         }
     }
