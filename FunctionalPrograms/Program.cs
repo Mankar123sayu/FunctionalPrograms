@@ -6,13 +6,13 @@ namespace FunctionalPrograms
     public class Program
     {
         static void Main(string[] args)
-        {
+        { 
             Console.WriteLine("Welcome to Functional Programs");
             
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an option to execute \n 1. Flip Coin \n 2. LeapYear \n 3. PowerOf2 \n 4. Exit");
+                Console.WriteLine(" \n Choose an option to execute \n 1. Flip Coin \n 2. LeapYear \n 3. PowerOf2 \n 4. HarmonicNumber \n 5. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,13 +33,20 @@ namespace FunctionalPrograms
                         int num2 = Convert.ToInt32(Console.ReadLine());
                         power.Display(num2);
                         break;
+                    case 4:
+                        HarmonicNumber number = new HarmonicNumber();
+                        Console.WriteLine("Enter the number: ");
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+                        number.Harmonic(num3);
+                        break;
+
                     /*case 3:
                         PrimeFactor prime = new PrimeFactor();
                         Console.WriteLine("Enter the number: ");
                         int num2 = Convert.ToInt32(Console.ReadLine());
                         prime.factor(num2);
                         break;*/
-                    case 4:
+                    case 5:
                         flag = false;
                         break;
                 }
